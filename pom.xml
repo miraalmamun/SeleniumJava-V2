@@ -30,6 +30,12 @@
             <artifactId>owner</artifactId>
             <version>1.0.12</version>
         </dependency>
+    <dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.22</version>
+  </dependency>
+
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
@@ -46,6 +52,24 @@
             <version>5.0.9</version>
         </dependency>
     </dependencies>
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok-maven-plugin</artifactId>
+             <version>1.18.22</version>
+            <executions>
+                <execution>
+                    <id>install-lombok</id>
+                    <phase>process-sources</phase>
+                    <goals>
+                        <goal>add-lombok-jar</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
 
 
     <profiles>
