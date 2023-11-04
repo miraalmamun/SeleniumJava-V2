@@ -57,14 +57,11 @@
         <plugin>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok-maven-plugin</artifactId>
-             <version>1.18.24</version>
+             <version>1.18.20.0</version>
             <executions>
                 <execution>
                     <id>install-lombok</id>
                     <phase>process-sources</phase>
-                    <goals>
-                        <goal>add-lombok-jar</goal>
-                    </goals>
                 </execution>
             </executions>
         </plugin>
